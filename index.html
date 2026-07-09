@@ -3,150 +3,262 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="Abdullah Abdelrahman Abdullah's Portfolio" />
+    <meta
+      name="description"
+      content="Abdullah Abdelrahman Abdullah's Portfolio"
+    />
     <link rel="icon" type="image/png" href="./Resources/portfolio_icon3.png" />
     <title>Abdullah Abdelrahman Abdullah</title>
+
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 10px;
+      }
+
       li {
         margin-bottom: 20px;
       }
+
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+
+      input,
+      textarea {
+        max-width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        table {
+          font-size: 16px !important;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+        }
+      }
     </style>
   </head>
+
   <body>
     <header>
-      <h1 style="text-align: center; font-size: 100px">
-        Professional Portofolio
+      <h1
+        style="
+          text-align: center;
+          font-size: clamp(40px, 6vw, 100px);
+        "
+      >
+        Professional Portfolio
       </h1>
+
       <img
         src="./Resources/my_image.png"
         alt="my image"
-        style="display: block; margin: auto"
-        height="700"
+        style="
+          display: block;
+          margin: auto;
+          max-width: 100%;
+          height: auto;
+        "
       />
+
       <hr style="margin-bottom: 1px; margin-top: 30px" />
       <hr style="margin-top: 1px" />
     </header>
+
     <main>
       <!-- About Me -->
       <section>
-        <h2 style="text-align: center; font-size: 70px; margin-top: 20px">
+        <h2
+          style="
+            text-align: center;
+            font-size: clamp(30px, 4vw, 70px);
+            margin-top: 20px;
+          "
+        >
           About Me
         </h2>
-        <ul style="font-size: 30px">
+
+        <ul style="font-size: clamp(18px, 2vw, 30px)">
           <li>Name: Abdullah Abdelrahman Abdullah</li>
           <li>Age: 19</li>
           <li>Email: abdulla.abdelrahman18@gmail.com</li>
+
           <li>
             Facebook:
             <a
               href="https://www.facebook.com/profile.php?id=61580393416831"
               target="_blank"
               style="text-decoration: none"
-              >Abdullah Abdelrahman</a
             >
+              Abdullah Abdelrahman
+            </a>
           </li>
+
           <li>
             Instagram:
             <a
-              href="https://www.instagram.com/0raven.trigon0/?__pwa=1#"
+              href="https://www.instagram.com/0raven.trigon0/"
               target="_blank"
               style="text-decoration: none"
-              >Abdullah Abdelrahman</a
             >
+              Abdullah Abdelrahman
+            </a>
           </li>
         </ul>
+
         <hr style="margin-bottom: 1px; margin-top: 30px" />
         <hr style="margin-top: 1px" />
       </section>
+
       <!-- Education -->
       <section>
-        <h2 style="text-align: center; font-size: 70px; margin-top: 20px">
+        <h2
+          style="
+            text-align: center;
+            font-size: clamp(30px, 4vw, 70px);
+            margin-top: 20px;
+          "
+        >
           Education
         </h2>
-        <p style="font-size: 30px">
-          Zagazig Military High School<br />2022 &rarr; 2025<br /><br />Faculty
-          Of Computers & Information - Zagazig University<br />2025 &rarr; 2029
+
+        <p style="font-size: clamp(18px, 2vw, 30px)">
+          Zagazig Military High School
+          <br />
+          2022 &rarr; 2025
+          <br /><br />
+
+          Faculty Of Computers & Information - Zagazig University
+          <br />
+          2025 &rarr; 2029
         </p>
+
         <hr style="margin-bottom: 1px; margin-top: 30px" />
         <hr style="margin-top: 1px" />
       </section>
+
       <!-- Skills -->
       <section>
-        <h2 style="text-align: center; font-size: 70px; margin-top: 20px">
+        <h2
+          style="
+            text-align: center;
+            font-size: clamp(30px, 4vw, 70px);
+            margin-top: 20px;
+          "
+        >
           Skills
         </h2>
+
         <table
           style="
-            font-size: 50px;
-            text-align: center;
+            width: 100%;
             margin: auto;
-            border: 3px solid black;
+            text-align: center;
+            font-size: clamp(16px, 2vw, 40px);
           "
-          width="100%"
         >
           <thead>
             <tr>
               <th>Skill</th>
-              <th>Profession Years</th>
+              <th>Professional Years</th>
             </tr>
           </thead>
+
           <tbody>
             <tr>
               <td>Programming</td>
               <td>3</td>
             </tr>
+
             <tr>
               <td>Violin</td>
               <td>5</td>
             </tr>
           </tbody>
         </table>
+
         <hr style="margin-bottom: 1px; margin-top: 30px" />
         <hr style="margin-top: 1px" />
       </section>
     </main>
+
     <footer>
       <!-- Contact Me -->
       <section>
-        <h2 style="text-align: center; font-size: 70px; margin-top: 20px">
+        <h2
+          style="
+            text-align: center;
+            font-size: clamp(30px, 4vw, 70px);
+            margin-top: 20px;
+          "
+        >
           Contact Me
         </h2>
+
         <form action="https://api.web3forms.com/submit" method="POST">
           <input
             type="hidden"
             name="access_key"
-            value="c22942bf-f4dd-4609-bdde-0752cb4760f8"
+            value="YOUR_ACCESS_KEY"
           />
+
           <div>
             <input
-              style="font-size: 30px"
               type="text"
+              name="name"
               placeholder="Name"
               required
+              style="font-size: 30px"
             />
           </div>
+
           <br />
+
           <div>
             <input
-              style="font-size: 30px"
               type="email"
+              name="email"
               placeholder="Email"
               required
+              style="font-size: 30px"
             />
           </div>
+
           <br />
+
           <div>
             <textarea
-              style="font-size: 30px"
-              name="Message"
+              name="message"
               cols="30"
               rows="5"
               placeholder="Enter a Message..."
               required
+              style="font-size: 30px"
             ></textarea>
           </div>
+
           <br />
-          <input style="font-size: 30px" type="submit" value="Send" />
+
+          <input
+            type="submit"
+            value="Send"
+            style="font-size: 30px"
+          />
         </form>
       </section>
     </footer>
